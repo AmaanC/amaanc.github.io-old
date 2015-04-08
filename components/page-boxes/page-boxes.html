@@ -1,0 +1,31 @@
+<link rel="import" href="/components/polymer/polymer.html">
+
+<polymer-element name="page-boxes">
+
+<template>
+    <style>
+        :host {
+            position: absolute;
+            float: right;
+            left: 15%;
+            top: 0;
+            width: 85%;
+            height: 100%;
+        }
+        #container {
+            height: 100%;
+        }
+        ::content div {
+            height: 100%;
+        }
+    </style>
+    <div id="container">
+        <content select="[box]"></content>
+    </div>
+</template>
+
+<script>
+    Polymer({});
+</script>
+
+</polymer-element>
