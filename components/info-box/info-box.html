@@ -1,0 +1,34 @@
+<link rel="import" href="/components/polymer/polymer.html">
+<link rel="import" href="/components/paper-shadow/paper-shadow.html">
+
+<polymer-element name="info-box">
+
+<template>
+    <style>
+        :host {
+            position: absolute;
+            margin-left: 5%;
+            margin-top: 5%;
+            width: 60%;
+            /*height: 60%;*/
+            background-color: #fcfcfc;
+            padding-left: 10px;
+        }
+        #container {
+            height: 100%;
+        }
+        ::content div {
+            height: 100%;
+        }
+    </style>
+    <div id="container">
+        <content select="div"></content>
+    </div>
+    <paper-shadow z='1'></paper-shadow>
+</template>
+
+<script>
+    Polymer({});
+</script>
+
+</polymer-element>

@@ -6,10 +6,12 @@
     <script src="/components/platform/platform.js"></script>
     <link rel="import" href="/components/side-bar/side-bar.html">
     <link rel="import" href="/components/page-boxes/page-boxes.html">
+    <link rel="import" href="/components/info-box/info-box.html">
 
     <style type="text/css">
         html, body {
             height: 100%;
+            font-family: sans-serif;
         }
         .purple {
             background-color: #5c54a3;
@@ -40,11 +42,45 @@
     </side-bar>
 
     <page-boxes>
-        <div class='purple' box>Text</div>
-        <div class='green' box>Text</div>
-        <div class='blue' box>Text</div>
-        <div class='red' box>Text</div>
-        <div class='yellow' box>Text</div>
+        <div class='purple' full>
+            <info-box>
+                <div>
+                    <h1>I'm Amaan Cheval</h1>
+                    <br>
+                    <h3>I'm an engineering student</h3>
+                    <br>
+                    <h3>I like xyz</h3>
+                </div>
+            </info-box>
+        </div>
+        <div class='green' full>
+            <info-box>
+                <div>
+                    Test
+                </div>
+            </info-box>
+        </div>
+        <div class='blue' full>
+            <info-box>
+                <div>
+                    Test
+                </div>
+            </info-box>
+        </div>
+        <div class='red' full>
+            <info-box>
+                <div>
+                    Test
+                </div>
+            </info-box>
+        </div>
+        <div class='yellow' full>
+            <info-box>
+                <div>
+                    Test
+                </div>
+            </info-box>
+        </div>
     </page-boxes>
 </body>
 </html>
